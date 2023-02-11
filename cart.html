@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC|DeliverGoo</title>
+    <link rel="icon" sizes="192x192" href="../img/favicon.ico" />
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+
+    <!--Script-->
+    <script src="/JS/getItems.js" defer></script>
+  </head>
+
+  <!--Header-->
+  <header class="header">
+    <a href="/" class="logo">Deliver<span class="yellow">Goo</span></a>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="order.html" class="btn">Back to Order</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger">
+      <img src="/img/grid-outline.svg" alt="" />
+    </div>
+  </header>
+  <!--showing selected items-->
+  <body>
+    <section class="top">
+      <section class="bottom">
+        <div class="home content center">
+          <h1>Your <span class="yellow">Delicious</span> Cart</h1>
+        </div>
+        <div class="wrap-table100 center">
+          <div class="table100">
+            <table>
+              <thead>
+                <tr class="table100-head">
+                  <th class="column1">Image</th>
+                  <th class="column2">Order Name</th>
+                  <th class="column3">Order Price</th>
+                </tr>
+              </thead>
+              <tbody id="startTable"></tbody>
+            </table>
+          </div>
+        </div>
+        <button class="btn" onclick="checkOut()">
+          <a href="order.html">Checkout</a>
+        </button>
+      </section>
+    </section>
+  </body>
+</html>

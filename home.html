@@ -1,0 +1,197 @@
+<!--Saif Abbas 1845222
+  Fahad Ahmed 1846866
+Khalid Alansari 2040210-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeleviryGoo</title>
+    <link rel="icon" sizes="192x192" href="img/favicon.ico" />
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Maps -->
+    <script src="/JS/googleMapsAPI.js"></script>
+  </head>
+  <body>
+    <!--Preloader -->
+    <div class="preloader">
+      <img src="img/preloader.gif" alt="preloader" />
+    </div>
+
+    <!--Google maps-->
+    <div id="map"></div>
+
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises
+      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM3J8_Ru56gcsoMwyb-Owhe4IJRpvDUyA&callback=initMap&v=weekly"
+      defer
+    ></script>
+
+    <!--Header-->
+    <header class="header">
+      <a href="/" class="logo">Deleviry<span class="yellow">Goo</span></a>
+
+      <!--Navigation-->
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="order.html" class="btn">Make an Order</a>
+      </nav>
+
+      <!--Hamburger-->
+      <div class="hamburger">
+        <img src="img/grid-outline.svg" alt="" />
+      </div>
+    </header>
+
+    <!--Main-->
+    <section class="home" id="home">
+      <div class="content">
+        <h1>Order Your Product <span class="yellow">Easier & Faster.</span></h1>
+        <p>
+          DeliverGoo is a online food delivery marketplace, connecting consumers
+          and restaurants through its platform in 24 countries.
+        </p>
+        <a href="/order.html" class="home-btn">Shop store List</a>
+      </div>
+      <div class="image">
+        <img src="img/Delivery address.svg" alt="" />
+      </div>
+    </section>
+
+    <!--Services-->
+    <section class="services" id="services">
+      <div class="top">
+        <h2><span class="yellow">Why</span> We are the Best</h2>
+        <p>
+          Because we don't want you to pay more than what you have to. Unlike
+          the Other delivery website or apps who charge you more.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <div class="box">
+          <img src="img/order-food.svg" alt="" />
+          <h4>Low Cost Delivery</h4>
+          <p>
+            One of our policy is free delivery is the driver took more than 30
+            minutes to deliver the food to your doorstep.
+          </p>
+          <a href="#">View More <img src="img/btn-arrow.svg" alt="" /> </a>
+        </div>
+        <div class="box">
+          <img src="img/fast-food.svg" alt="" />
+          <h4>Foods From Around The World</h4>
+          <p>
+            You experience the world from food. The most delicious food comes
+            with unforgettable time of happiness
+          </p>
+          <a href="order.html">View More <img src="img/btn-arrow.svg" alt="" /> </a>
+        </div>
+        <div class="box">
+          <img src="img/delivery-man.svg" alt="" />
+          <h4>Join Our Team</h4>
+          <p>apply to be a driver and earn money by delivering food to our</p>
+          <a href="contact.html">View More <img src="img/btn-arrow.svg" alt="" /> </a>
+        </div>
+      </div>
+    </section>
+
+    <!--App-->
+    <section class="app" id="contact">
+      <div class="image">
+        <img src="img/splash with mobile.svg" alt="" />
+      </div>
+      <div class="content">
+        <h3>Try out Our App</h3>
+        <p>
+          You can easily place your order using our mobile app. Now you can
+          download our app for both IOS and Android mobiles.
+        </p>
+        <div class="links">
+          <img src="img/app-store.png" alt="" />
+          <img src="img/google-play.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="top">
+        <div class="content">
+          <a href="" class="logo">Deliver<span class="yellow">Goo</span></a>
+          <p>Serving you is our pleasure. Order now and enjoy your time.</p>
+        </div>
+
+        <div class="links">
+          <div class="link">
+            <h4>Contact Information</h4>
+            <div>
+              <img src="img/location-cross.svg" alt="" />
+              <span>2223, Jeddah, Al-Nuzha, Heraa St., Vic3027</span>
+            </div>
+            <div>
+              <img src="img/sms-tracking.svg" alt="" />
+              <span>deliverGoo@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="link">
+            <h4>Quick Links</h4>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Download</a>
+          </div>
+
+          <div class="link">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term of Use</a>
+            <a href="#">Conditions</a>
+            <a href="#">Location</a>
+          </div>
+
+          <div class="link">
+            <h4>Connect with Us</h4>
+            <div>
+              <img src="img/instagram.svg" alt="" />
+              <span>Instagram</span>
+            </div>
+            <div>
+              <img src="img/twitter.svg" alt="" />
+              <span>Twitter</span>
+            </div>
+            <div>
+              <img src="img/facebook.svg" alt="" />
+              <span>Facebook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          Copyright © 2010-2021 DeliverGoo Company S.L. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Go To Top -->
+    <div class="scroll-top">
+      <img src="img/arrow-up-outline.svg" alt="" />
+    </div>
+
+    <!-- Scripts -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
