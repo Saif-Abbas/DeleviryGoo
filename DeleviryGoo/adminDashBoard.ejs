@@ -1,3 +1,4 @@
+<!-- Author: peekok (Just4you) -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,8 +32,31 @@
       </div>
     </header>
     <section class="home" id="home">
-    <h1>Admin Dashboard</h1>
+      <h1>Admin Dashboard</h1>
     </section>
+    <!--Table that render the array data received from Express.js -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (var i = 0; i < data.length; i++) { %>
+        <tr>
+          <td><%= i + 1 %></td>
+          <td><%= data[i].name %></td>
+          <td><%= data[i].email %></td>
+          <td><%= data[i].phone %></td>
+          <td><%= data[i].message %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
 
     <script src="JS/database.js"></script>
     <script src="JS/adminDashBoard.js"></script>
