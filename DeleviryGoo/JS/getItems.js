@@ -4,9 +4,9 @@ function getItems() {
     let totalPrice = 0;
     if (orders === null) {
       ordersString.push(`<tr>
-      <td>A beautiful picture will be here.</td>
-      <td>Your yummy yummy food name.</td>
-      <td>A price of that yummy yummy food.</td>
+      <td>A picture will be here.</td>
+      <td>Your food name.</td>
+      <td>A price of that food.</td>
       </tr>`)
   } else {
       orders.forEach((order) => {
